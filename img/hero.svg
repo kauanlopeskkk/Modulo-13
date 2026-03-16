@@ -1,0 +1,28 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Interior da barbearia">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f0f0f"/>
+      <stop offset="60%" stop-color="#1c1c1c"/>
+      <stop offset="100%" stop-color="#2b1b0e"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#f3c25b"/>
+      <stop offset="100%" stop-color="#b87719"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <g opacity="0.15" fill="#ffffff">
+    <circle cx="200" cy="120" r="60"/>
+    <circle cx="980" cy="420" r="90"/>
+    <circle cx="760" cy="140" r="45"/>
+  </g>
+  <g stroke="url(#gold)" stroke-width="10" fill="none" opacity="0.9">
+    <path d="M120 430 C 260 300, 420 300, 560 430"/>
+    <path d="M640 430 C 780 300, 940 300, 1080 430"/>
+  </g>
+  <rect x="140" y="160" width="260" height="240" rx="18" fill="#161616" stroke="url(#gold)" stroke-width="4"/>
+  <rect x="480" y="160" width="260" height="240" rx="18" fill="#161616" stroke="url(#gold)" stroke-width="4"/>
+  <rect x="820" y="160" width="240" height="240" rx="18" fill="#161616" stroke="url(#gold)" stroke-width="4"/>
+  <text x="160" y="520" font-family="Georgia, serif" font-size="56" fill="#f4c14b" letter-spacing="3">ESTILO LIVRE</text>
+  <text x="160" y="560" font-family="Arial, sans-serif" font-size="18" fill="#d8b46a" letter-spacing="6">BARBERSHOP</text>
+</svg>

@@ -1,0 +1,12 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" role="img" aria-label="Estilo Livre logo">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f4c14b"/>
+      <stop offset="100%" stop-color="#d08b1b"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="120" rx="12" fill="#111"/>
+  <rect x="8" y="8" width="304" height="104" rx="10" fill="#1b1b1b" stroke="url(#g)" stroke-width="2"/>
+  <text x="160" y="62" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="url(#g)" letter-spacing="2">ESTILO LIVRE</text>
+  <text x="160" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#caa65c" letter-spacing="4">BARBERSHOP</text>
+</svg>
