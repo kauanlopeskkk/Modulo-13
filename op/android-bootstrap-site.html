@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android e Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --android-green: #3ddc84;
+            --android-dark: #0f172a;
+            --soft-bg: #eefbf3;
+            --accent: #14532d;
+        }
+
+        body {
+            background: linear-gradient(180deg, #f8fff9 0%, #e9f8ef 100%);
+            color: #1f2937;
+        }
+
+        .hero {
+            background: radial-gradient(circle at top left, rgba(61, 220, 132, 0.35), transparent 35%),
+                        linear-gradient(135deg, #08121f, #132238 65%, #173b2d);
+            color: #fff;
+        }
+
+        .hero-badge,
+        .section-tag {
+            display: inline-block;
+            background: rgba(61, 220, 132, 0.15);
+            color: var(--android-green);
+            border: 1px solid rgba(61, 220, 132, 0.35);
+            border-radius: 999px;
+            padding: 0.35rem 0.85rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .hero-phone,
+        .info-card,
+        .code-card {
+            border: 0;
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+        }
+
+        .hero-phone {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(8px);
+        }
+
+        .stat-box {
+            background: #fff;
+            border-radius: 1rem;
+            padding: 1rem;
+            height: 100%;
+            box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+        }
+
+        .feature-icon {
+            width: 52px;
+            height: 52px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 14px;
+            background: var(--soft-bg);
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .android-grid-demo .demo-block {
+            background: linear-gradient(135deg, #3ddc84, #1e9e59);
+            color: #fff;
+            border-radius: 1rem;
+            padding: 1rem;
+            text-align: center;
+            font-weight: 600;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .code-card {
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        pre {
+            margin: 0;
+            white-space: pre-wrap;
+        }
+
+        footer {
+            background: #08121f;
+            color: #cbd5e1;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero py-5">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <span class="hero-badge mb-3">Android + Bootstrap 5</span>
+                    <h1 class="display-4 fw-bold mb-3">Um site sobre Android e a programacao de modulo Bootstrap</h1>
+                    <p class="lead mb-4">Bootstrap ajuda a criar telas organizadas, responsivas e bonitas para apresentar conteudo sobre Android. Entre os recursos mais importantes estao o sistema de <strong>grid</strong> e os <strong>componentes prontos</strong>.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#grid" class="btn btn-success btn-lg">Ver Grid</a>
+                        <a href="#componentes" class="btn btn-outline-light btn-lg">Ver Componentes</a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="hero-phone p-4">
+                        <div class="bg-white text-dark rounded-4 p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <strong>Android Studio</strong>
+                                <span class="badge text-bg-success">Bootstrap</span>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <div class="stat-box">
+                                        <h2 class="h4 fw-bold text-success">12</h2>
+                                        <p class="mb-0">colunas no grid</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="stat-box">
+                                        <h2 class="h4 fw-bold text-success">100%</h2>
+                                        <p class="mb-0">responsivo</p>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="alert alert-success mb-0">
+                                        Layouts para paginas de apps, documentacao, tutoriais e paineis Android.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="info-card bg-white p-4 h-100">
+                            <div class="feature-icon mb-3">A</div>
+                            <h2 class="h4">Android</h2>
+                            <p class="mb-0">Android e uma plataforma forte para aplicativos moveis. Um site sobre esse tema pode mostrar versoes, recursos, design de apps e dicas de desenvolvimento.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info-card bg-white p-4 h-100">
+                            <div class="feature-icon mb-3">G</div>
+                            <h2 class="h4">Grid</h2>
+                            <p class="mb-0">O grid do Bootstrap organiza a pagina em linhas e colunas. Isso facilita distribuir imagens, textos e blocos de informacao em varios tamanhos de tela.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info-card bg-white p-4 h-100">
+                            <div class="feature-icon mb-3">C</div>
+                            <h2 class="h4">Componentes</h2>
+                            <p class="mb-0">Botoes, cards, navbar, alertas e accordion ajudam a construir interfaces modernas sem precisar criar tudo do zero.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="grid" class="py-5 bg-white">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <span class="section-tag mb-3">Modulo Grid</span>
+                        <h2 class="display-6 fw-bold">Como funciona o grid no Bootstrap</h2>
+                        <p>O Bootstrap trabalha com um sistema de 12 colunas. Assim, voce pode dividir a tela em partes iguais ou criar combinacoes como <code>col-12</code>, <code>col-md-6</code> e <code>col-lg-4</code>.</p>
+                        <p class="mb-0">Para um site sobre Android, isso e util para mostrar noticias do sistema, cards de aplicativos, modelos de celulares e secoes de tutorial de forma organizada.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="android-grid-demo">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <div class="demo-block">col-12 | Cabecalho Android</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="demo-block">col-md-6 | Noticias</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="demo-block">col-md-6 | Tutoriais</div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="demo-block">col-lg-4 | App 1</div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="demo-block">col-lg-4 | App 2</div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="demo-block">col-lg-4 | App 3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="code-card p-4 h-100">
+                            <h3 class="h5 mb-3">Exemplo de grid</h3>
+<pre><code>&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-md-6"&gt;Android&lt;/div&gt;
+    &lt;div class="col-md-6"&gt;Bootstrap&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="info-card bg-white p-4 h-100">
+                            <h3 class="h5">Vantagens do grid</h3>
+                            <ul class="mb-0">
+                                <li>Adapta o site para celular, tablet e computador.</li>
+                                <li>Deixa o conteudo alinhado e mais profissional.</li>
+                                <li>Ajuda a separar secoes sobre apps, versoes e novidades do Android.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="componentes" class="py-5 bg-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-tag mb-3">Componentes Bootstrap</span>
+                    <h2 class="display-6 fw-bold">Elementos prontos para uma pagina sobre Android</h2>
+                    <p class="mx-auto" style="max-width: 760px;">Os componentes deixam o desenvolvimento mais rapido. Em um site sobre Android, eles ajudam a destacar informacoes, organizar menus e apresentar conteudo de forma visual.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="h5 card-title">Navbar</h3>
+                                <p class="card-text">Ideal para criar o menu principal com links como Home, Android, Apps e Contato.</p>
+                                <span class="badge text-bg-success">Navegacao</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="h5 card-title">Cards</h3>
+                                <p class="card-text">Perfeitos para mostrar celulares Android, aplicativos famosos ou versoes do sistema.</p>
+                                <span class="badge text-bg-success">Conteudo visual</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="h5 card-title">Alerts</h3>
+                                <p class="card-text">Chamam atencao para atualizacoes importantes, dicas de seguranca ou novidades do Android.</p>
+                                <span class="badge text-bg-success">Destaque</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="h5 card-title">Accordion</h3>
+                                <p class="card-text">Muito util para perguntas frequentes ou explicacoes sobre recursos do sistema Android.</p>
+                                <span class="badge text-bg-success">Organizacao</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 mt-2">
+                    <div class="col-lg-7">
+                        <div class="accordion shadow-sm" id="androidFaq">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#itemOne">
+                                        Por que usar Bootstrap em um site sobre Android?
+                                    </button>
+                                </h2>
+                                <div id="itemOne" class="accordion-collapse collapse show" data-bs-parent="#androidFaq">
+                                    <div class="accordion-body">
+                                        Porque ele oferece velocidade no desenvolvimento, responsividade e varios componentes visuais que deixam a pagina mais organizada.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#itemTwo">
+                                        O que estudar primeiro: grid ou componentes?
+                                    </button>
+                                </h2>
+                                <div id="itemTwo" class="accordion-collapse collapse" data-bs-parent="#androidFaq">
+                                    <div class="accordion-body">
+                                        O ideal e comecar pelo grid, porque ele define a estrutura da pagina. Depois, os componentes entram para enriquecer a interface.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="alert alert-success shadow-sm" role="alert">
+                            <strong>Dica:</strong> uma pagina sobre Android fica mais forte quando combina um bom grid com componentes como cards, botoes e accordions.
+                        </div>
+                        <div class="code-card p-4 mt-3">
+                            <h3 class="h5 mb-3">Exemplo de componente</h3>
+<pre><code>&lt;button class="btn btn-success"&gt;
+  Saiba mais sobre Android
+&lt;/button&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4">
+        <div class="container text-center">
+            <p class="mb-1">Site educativo sobre Android e Bootstrap.</p>
+            <small>Feito com Bootstrap 5, grid responsivo e componentes prontos.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
